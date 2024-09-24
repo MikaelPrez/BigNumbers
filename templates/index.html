@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG NUMBERS</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Big Numbers Game</h1>
+        <!--Contenedor principal del juego-->
+        <div id="game-board">
+            <div class="image-container">
+                <!-- Imagen izquierda -->
+                <img id="left-image" src="" alt="Left Image">
+                <!-- Imagen derecha -->
+                <img id="right-image" src="" alt="Right Image">
+            </div>
+            <!-- Botones Higher / Lower (cambiar nombre, caro suena raro) -->
+            <div class="buttons">
+                <button onclick="makeGuess('higher')">Más Caro</button>
+                <button onclick="makeGuess('lower')">Más Económico</button>
+            </div>
+            <!-- Muestra la puntuación actual-->
+            <div class="score">
+                Puntaje: <span id="score">0</span>
+            </div>
+        </div>
+        <!-- Pantalla de Game Over-->
+        <div id="game-over" class="hidden">
+            <h2>Perdiste!</h2>
+            <p>Tu puntaje final fue de: <span id="final-score">0</span></p>
+            <button onclick="restartGame()">Reiniciar juego</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
