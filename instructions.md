@@ -12,3 +12,17 @@ C:\Users\BigNumbers>flask --app hola run
 Para que tengamos activado el debug debemos poner lo siguiente:
 C:\Users\BigNumbers>flask --app hola --debug run
 
+
+Heroku (CMD)
+Para ver si está instalado ponemos esto en el CMD
+C:\Users\mikae> heroku
+Para iniciar sesión
+C:\Users\mikae> heroku login
+Iniciamos sesión desde la página
+(Nos aparece el correo registrado resaltado en un color distinto)
+Para cerrar sesión
+C:\Users\mikae> heroku logout
+
+Otros comandos
+C:\Users\mikae> heroku status
+C:\Users\mikae> heroku apps
